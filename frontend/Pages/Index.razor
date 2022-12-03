@@ -1,9 +1,14 @@
 ﻿@page "/"
 
-<PageTitle>Index</PageTitle>
+<BSLabel>TodoList:</BSLabel>
+<BSLabel>To do List:</BSLabel>
+<BSInput placeholder="Escreva alguma coisa aqui..." 
+InputType="InputType.TextArea" 
+Value="@("")"/>
 
-<h1>Hello, world!</h1>
+<BSLabel>Para: </BSLabel>
+<BSInput 
+InputType="InputType.DateTimeLocal" 
+Value="@DateTime.Now"/>
 
-Welcome to your new app.
-
-<SurveyPrompt Title="How is Blazor working for you?" />
+<BSButton Color="BSColor.Dark">Adicionar</BSButton>
